@@ -1,0 +1,7 @@
+<% unless article.archived? %>
+  <li class="article" >
+    <h2><%= article.title %></h2>
+    <p><%= article.body %></h2>
+    <h4><%= link_to "Read more", article, class: 'button'%></h4>
+  </li>
+<% end %>

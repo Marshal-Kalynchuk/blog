@@ -1,0 +1,213 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  color: #555;
+  line-height: 1.6em;
+  font-size: 16px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.clr {
+  clear:both;
+}
+
+.space {
+  display: block;
+  height: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main-header {
+  background-color: teal;
+  color: #fff;
+}
+
+#navbar {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.nav-link {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+#showcase {
+  background-image: url("showcase.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.6em;
+  padding-top: 30px;
+  background-color: #33333398;
+}
+
+#main {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  background-color: #333;
+  float: right;
+  width: 30%;
+  padding: 10px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+figure {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0;
+  
+}
+ul {
+  list-style: none;
+}
+
+.button {
+  background-color: #333;
+  padding: 5px 10px;
+  color: #f4f4f4;
+}
+
+.article {
+  display: block;
+}
+
+.edit-article-list {
+  display: flex;
+  padding: 2px 10px;
+  background-color: #333;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.edit-article-list li {
+  padding: 5px 10px;
+}
+
+.edit-article-list li a {
+  color: #f4f4f4
+}
+
+.text-area-small {
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+}
+
+.text-area-large {
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+}
+
+figcaption {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+}
+
+#history {
+  float: right;
+  width: 60%;
+  padding: 15px 10px 0 25px;
+  height: auto;
+  box-sizing: border-box;
+} 
+
+#history-figure {
+  float: left;
+  width: 40%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content:center;
+  max-height: 400px;
+}
+
+#history-figure figcaption {
+  padding: 10px 15px;
+  top: 40px;
+  left: 50px;
+}
+
+#history-figure img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+#main-footer {
+  text-align: center;
+}
+
+@media(max-width:800px) {
+  #main {
+    width: 100%;
+    float: none;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media(max-width:1300px){
+  #history {
+    width: 100%;
+    float: none;
+  }
+  #history-figure{
+    width: 100%;
+    float: none;
+    justify-content:center;
+  }
+}
